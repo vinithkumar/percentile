@@ -18,10 +18,10 @@ In WAMP, the intl extension is “activated” by default but not working. To make i
 - Composer
 
 ## Installation
-- Installing Composer.
+- Composer should be installed.
 - Open command prompt in project directory and run command.
 - php composer create-project --prefer-dist cakephp/app percentile
-- To run phpunit, Run command vendor/bin/phpunit tests/TestCase/Controller Students from project directory.
+- To run phpunit, Run command  vendor/bin/phpunit tests/TestCase/Controller Students  from project directory.
  
 ## List of Important Files and Functions
 

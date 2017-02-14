@@ -2,6 +2,8 @@
 Scope: Student data is considered in comma-separated format where 
 the columns are ID, name, and GPA. The program output will contain 
 Id, student name, GPA and calculated percentile rank
+
+Home page - We have Sample data and Custom data. In the custom data we can upload txt file and see the results.
                                                                      
 Created by: Vinith, 2017                                           
 
@@ -18,7 +20,7 @@ In WAMP, the intl extension is “activated” by default but not working. To make i
 - Composer
 
 ## Installation
-- Installing Composer.
+- Composer should be installed.
 - Open command prompt in project directory and run command.
 - php composer create-project --prefer-dist cakephp/app percentile
 - To run phpunit, Run command  vendor/bin/phpunit tests/TestCase/Controller Students  from project directory.
