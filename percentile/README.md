@@ -12,9 +12,9 @@ Created by: Vinith, 2017
 - List of Important Files and Functions
 	
 ## Cakephp 3.4 requirements
-- PHP >= 5.6.0
+- PHP >= 5.6.0 <br>
 In XAMPP, intl extension is included but you have to uncomment extension=php_intl.dll in php.ini and restart the server through the XAMPP Control Panel.
-In WAMP, the intl extension is ìactivatedî by default but not working. To make it work you have to go to php folder (by default) C:\wamp\bin\php\php{version}, copy all the files that looks like icu*.dll and paste them into the apache bin directory C:\wamp\bin\apache\apache{version}\bin. Then restart all services and it should be OK.
+In WAMP, the intl extension is ‚Äúactivated‚Äù by default but not working. To make it work you have to go to php folder (by default) C:\wamp\bin\php\php{version}, copy all the files that looks like icu*.dll and paste them into the apache bin directory C:\wamp\bin\apache\apache{version}\bin. Then restart all services and it should be OK.
 - Composer
 
 ## Installation
