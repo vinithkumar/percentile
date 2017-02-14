@@ -2,6 +2,8 @@
 Scope: Student data is considered in comma-separated format where 
 the columns are ID, name, and GPA. The program output will contain 
 Id, student name, GPA and calculated percentile rank
+
+Home page - We have Sample data and Custom data. In the custom data we can upload txt file and see the results.
                                                                      
 Created by: Vinith, 2017                                           
 
@@ -12,13 +14,13 @@ Created by: Vinith, 2017
 - List of Important Files and Functions
 	
 ## Cakephp 3.4 requirements
-- PHP >= 5.6.0 <br>
+- PHP >= 5.6.0
 In XAMPP, intl extension is included but you have to uncomment extension=php_intl.dll in php.ini and restart the server through the XAMPP Control Panel.
 In WAMP, the intl extension is “activated” by default but not working. To make it work you have to go to php folder (by default) C:\wamp\bin\php\php{version}, copy all the files that looks like icu*.dll and paste them into the apache bin directory C:\wamp\bin\apache\apache{version}\bin. Then restart all services and it should be OK.
 - Composer
 
 ## Installation
-- Installing Composer.
+- Composer should be installed.
 - Open command prompt in project directory and run command.
 - php composer create-project --prefer-dist cakephp/app percentile
 - To run phpunit, Run command  vendor/bin/phpunit tests/TestCase/Controller Students  from project directory.
