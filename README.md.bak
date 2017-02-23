@@ -5,7 +5,7 @@ Id, student name, GPA and calculated percentile rank
 
 Run site in local server - http://localhost/percentile/students/
 
-Home page - We have Sample data and Custom data. In the custom data we can upload txt or csv files and see the results.
+Home page - We have Sample data and Custom data. In the custom data we can upload txt file and see the results.
                                                                      
 Created by: Vinith, 2017                                           
 
