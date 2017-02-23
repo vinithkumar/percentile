@@ -51,5 +51,8 @@ view is present in src/Template/Students/index.ctp. It is used to render results
 Routes file is present in config/routes.php. It is used to navigate url to appropriate operation logic.
 
 ### Unit tests
-Php unit test file is present in tests/TestCase/Controller/StudentsControllerTest.php  tests/TestCase/Controller/Component/PercentileComponentTest.php<br>
-To run phpunit, Run command  vendor/bin/phpunit tests/TestCase/Controller Students  from project directory.
+Php unit test file is present in tests/TestCase/Controller/StudentsControllerTest.php  <br>
+tests/TestCase/Controller/Component/PercentileComponentTest.php <br>
+Test particular student's GPA percentile rank - testStudentsPercentile method in tests/TestCase/Controller/Component/PercentileComponentTest.php <br>
+Test all the students percentile rank - testIndex method in tests/TestCase/Controller/StudentsControllerTest.php <br>
+To run phpunit, Run command     vendor/bin/phpunit tests/TestCase/Controller Students     from project directory.
