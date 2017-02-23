@@ -52,3 +52,4 @@ Routes file is present in config/routes.php. It is used to navigate url to appro
 
 ### Unit tests
 Php unit test file is present in tests/TestCase/Controller/StudentsControllerTest.php  tests/TestCase/Controller/Component/PercentileComponentTest.php
+To run phpunit, Run command  vendor/bin/phpunit tests/TestCase/Controller Students  from project directory.
