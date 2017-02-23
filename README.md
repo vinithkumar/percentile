@@ -36,8 +36,13 @@ This folder contains Controller, Model and View used to write functions to read 
 controller is present in src/Controller/StudentsController.php, It calls students controller functions and render result to views.
 
 
+### model
+model is present in src/Model/Entity/Student.php, It calls students entity model functions and its used for convert array format and upload the files.
+
+
 ### component
-controller is present in src/Controller/Component/PercentileComponent.php, Its calculate Percentile Rank.
+Data Component is present in src/Controller/Component/DataComponent.php, Its render the files.
+Percentile Component is present in src/Controller/Component/PercentileComponent.php, Its calculate Percentile Rank.
 
 ### Views
 view is present in src/Template/Students/index.ctp. It is used to render results.
