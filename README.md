@@ -41,7 +41,7 @@ model is present in src/Model/Entity/Student.php, It calls students entity model
 
 
 ### component
-Data Component is present in src/Controller/Component/DataComponent.php, Its render the files.
+Data Component is present in src/Controller/Component/DataComponent.php, Its render the files.<br>
 Percentile Component is present in src/Controller/Component/PercentileComponent.php, Its calculate Percentile Rank.
 
 ### Views
@@ -52,3 +52,4 @@ Routes file is present in config/routes.php. It is used to navigate url to appro
 
 ### Unit tests
 Php unit test file is present in tests/TestCase/Controller/StudentsControllerTest.php  tests/TestCase/Controller/Component/PercentileComponentTest.php
+To run phpunit, Run command  vendor/bin/phpunit tests/TestCase/Controller Students  from project directory.
