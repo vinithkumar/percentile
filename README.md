@@ -56,4 +56,4 @@ Php unit test file is present in tests/TestCase/Controller/StudentsControllerTes
 testAllStudentsRank() method is used for test all the students percentile rank.<br>
 testSingleStudentRank() method is used for test single student percentile rank.<br><br>
 
-To run phpunit, Run command     vendor/bin/phpunit tests/TestCase/Controller Students     from project directory.
+To run phpunit, Run command    <b>vendor/bin/phpunit tests/TestCase/Controller Students</b>     from project directory.
