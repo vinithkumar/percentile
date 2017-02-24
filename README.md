@@ -53,7 +53,7 @@ Routes file is present in config/routes.php. It is used to navigate url to appro
 ### Unit tests
 Php unit test file is present in tests/TestCase/Controller/StudentsControllerTest.php  <br><br>
 
-testAllStudentsRank() method is used for test all the students percentile rank.<br><br>
+testAllStudentsRank() method is used for test all the students percentile rank.<br>
 testSingleStudentRank() method is used for test single student percentile rank.<br><br>
 
 To run phpunit, Run command     vendor/bin/phpunit tests/TestCase/Controller Students     from project directory.
