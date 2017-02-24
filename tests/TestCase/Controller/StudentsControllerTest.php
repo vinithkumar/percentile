@@ -32,12 +32,19 @@ use App\Model\Entity\Student;
  */
 class StudentsControllerTest extends IntegrationTestCase
 {
-    public $students = [
+    public $allstudents = [
             ['Randy Perez', '1.60',10],
             ['Alice Brown', '3.50',80],
             ['Maria Russell', '2.20',30],
             ['Shirley Evans', '2.72',50],
             ['Daniel Bell', '3.5',80],
+        ];
+    public $students = [
+            [471908, 'Randy Perez', '1.60'],
+            [957625, 'Alice Brown', '3.50'],
+            [909401, 'Maria Russell', '2.20'],
+            [780367, 'Shirley Evans', '2.72'],
+            [841786, 'Daniel Bell', '3.50'],
         ];
 
      public function setUp()
@@ -55,14 +62,14 @@ class StudentsControllerTest extends IntegrationTestCase
     }
 
      /**
-     * Testing Index page
+     * Testing all the students percentile Rank
      *
      * @return void
      */
-    public function testIndex()
+    public function testAllStudentsRank()
     {
         $this->Students = new StudentsController();
-        $file = WWW_ROOT.'files/students_test.txt';   //Support txt or csv files.
+        $file = WWW_ROOT.'files/students_test.txt';   //Support txt or csv files. //Get the Students ID, name & GPA Details
 
         //Call Data Component
         $studentData = $this->data->getFileData($file);
@@ -77,7 +84,35 @@ class StudentsControllerTest extends IntegrationTestCase
            $students_result[$key] = array($value['name'],$value['gpa'],$value['percentile']);
         }
         
-        $this->assertEquals($this->students, $students_result);
+        $this->assertEquals($this->allstudents, $students_result);
+    }
+
+     /**
+     * Testing single student percentile Rank
+     *
+     */
+
+     public function testSingleStudentRank()
+    {
+      $results = ['1.60'=>1, '3.50'=>2, '2.20'=>1,'2.72'=>1];
+      $studentsArray = $this->students;
+
+      if(!empty($studentsArray))
+      {
+            $studentsTotal = count($studentsArray);
+            $sameGpa = $this->component->getSameGpa($studentsArray,"2");  //Call getSameGpa method in the percentile component.
+
+            $percentile = $this->component->getPercentile($studentsArray,$studentsTotal,$sameGpa,'2.20');
+            //Call getPercentile method in the percentile component.
+
+            $this->assertEquals(30, $percentile);
+      }
+    }
+
+    public function tearDown()
+    {
+        parent::tearDown();
+        unset($this->component, $this->controller);
     }
 
 }

@@ -38,7 +38,7 @@ class PercentileComponentTest extends TestCase
     }
 
     /**
-     * Testing Percentile Rank
+     * Testing Percentile Rank different GPA Mark
      *
      */
 
@@ -52,10 +52,10 @@ class PercentileComponentTest extends TestCase
             $studentsTotal = count($studentsArray);
             $sameGpa = $this->component->getSameGpa($studentsArray,"2");  //Call getSameGpa method in the percentile component.
 
-            $percentile = $this->component->getPercentile($studentsArray,$studentsTotal,$sameGpa,'2.20');
+            $percentile = $this->component->getPercentile($studentsArray,$studentsTotal,$sameGpa,'1.60');
             //Call getPercentile method in the percentile component.
 
-            $this->assertEquals(30, $percentile);
+            $this->assertEquals(10, $percentile);
       }
     }
 
