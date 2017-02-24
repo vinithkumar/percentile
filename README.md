@@ -18,7 +18,7 @@ Created by: Vinith, 2017
 ## Cakephp 3.4 requirements
 - PHP >= 5.6.0
 In XAMPP, intl extension is included but you have to uncomment extension=php_intl.dll in php.ini and restart the server through the XAMPP Control Panel.
-In WAMP, the intl extension is “activated” by default but not working. To make it work you have to go to php folder (by default) C:\wamp\bin\php\php{version}, copy all the files that looks like icu*.dll and paste them into the apache bin directory C:\wamp\bin\apache\apache{version}\bin. Then restart all services and it should be OK.
+In WAMP, the intl extension is ?activated? by default but not working. To make it work you have to go to php folder (by default) C:\wamp\bin\php\php{version}, copy all the files that looks like icu*.dll and paste them into the apache bin directory C:\wamp\bin\apache\apache{version}\bin. Then restart all services and it should be OK.
 - Composer
 
 ## Installation
@@ -51,8 +51,9 @@ view is present in src/Template/Students/index.ctp. It is used to render results
 Routes file is present in config/routes.php. It is used to navigate url to appropriate operation logic.
 
 ### Unit tests
-Php unit test file is present in tests/TestCase/Controller/StudentsControllerTest.php  <br>
-tests/TestCase/Controller/Component/PercentileComponentTest.php <br>
-Test particular student's GPA percentile rank - testStudentsPercentile method in tests/TestCase/Controller/Component/PercentileComponentTest.php <br>
-Test all the students percentile rank - testIndex method in tests/TestCase/Controller/StudentsControllerTest.php <br>
+Php unit test file is present in tests/TestCase/Controller/StudentsControllerTest.php  <br><br>
+
+testAllStudentsRank() method is used for test all the students percentile rank.<br><br>
+testSingleStudentRank() method is used for test single student percentile rank.<br><br>
+
 To run phpunit, Run command     vendor/bin/phpunit tests/TestCase/Controller Students     from project directory.
